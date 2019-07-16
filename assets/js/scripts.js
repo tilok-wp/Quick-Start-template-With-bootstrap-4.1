@@ -8,9 +8,25 @@
 	});
 
     // Menu toggleClass(Show Mobile Menu)
-    $('.icons__menu i').on('click', function () {
-        $('.mobile-menu').toggleClass('show')
+    $('.manubar-toggler').on('click', function () {
+        $('.main-menu').toggleClass('show');
+        $('.menu-right').toggleClass('show');
+        $(this).toggleClass('show');
     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     $("section").click(function(){
         $(".mobile-menu").removeClass('show');
