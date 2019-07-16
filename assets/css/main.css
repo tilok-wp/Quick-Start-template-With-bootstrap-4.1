@@ -244,13 +244,18 @@ a.to-top {
 .main-menu ul li:after {
     position: absolute;
     content: "";
-    background-color: #333;
+    background-color: #00A7E1;
     height: 2px;
     width: 100%;
     top: 98%;
 	border-radius: 10rem;
 	transition: .3s;
 	transform: scaleX(0);
+}
+@media only screen and (max-width: 767px) {
+	.main-menu ul li:after {
+		display: none;
+	}
 }
 .main-menu ul li.current-menu-item:after, .main-menu ul li:hover:after {
 	transform: scaleX(1);
@@ -275,7 +280,7 @@ a.to-top {
     padding: .7rem 1rem;
 	width: 15rem;
 	top: 100%;
-    border-top: .3rem solid #333;
+    border-top: .3rem solid #00A7E1;
     transform: scaleY(0);
     transform-origin: top;
     transition: .3s;
